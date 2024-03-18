@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+body header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .container .links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+body header .container .links li {
+  transition: 0.3s;
+}
+body header .container .links li:hover {
+  transform: translateY(-2px);
+}
+body header .container .links li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: hsl(243, 87%, 12%);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+body header .container .links li a:hover {
+  background-color: #eee;
+}
+body main .landing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 80px 0;
+}
+body main .landing .info {
+  flex: 1;
+}
+body main .landing .info h2 {
+  font-size: 38px;
+  font-family: "Raleway", sans-serif;
+  color: hsl(243, 87%, 12%);
+  line-height: 1.5;
+}
+body main .landing .info p {
+  margin: 15px 0;
+  color: hsl(243, 87%, 12%);
+  font-weight: 700;
+}
+body main .landing .info form div {
+  margin: 10px 0;
+}
+body main .landing .info form div #email {
+  font-family: "Open Sans", sans-serif;
+  width: 50%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid hsl(238, 22%, 44%);
+  border-radius: 3px;
+}
+body main .landing .info form div #email::-moz-placeholder {
+  color: hsl(0, 0%, 75%);
+}
+body main .landing .info form div #email::placeholder {
+  color: hsl(0, 0%, 75%);
+}
+body main .landing .info form div input:last-child {
+  width: 30%;
+  padding: 13px;
+  border: none;
+  margin-left: 10px;
+  background-color: hsl(224, 93%, 58%);
+  border-radius: 3px;
+  cursor: pointer;
+  color: hsl(240, 75%, 98%);
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+body main .landing .info form div input:last-child:hover {
+  background-color: hsla(224, 93%, 58%, 0.8);
+}
+body main .landing .image {
+  flex: 1;
+}
+body main .landing .image img {
+  width: 100%;
+}
+body main .stay {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 80px 0;
+  background-color: hsl(240, 75%, 98%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .stay .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .stay .container .info {
+  flex: 1.4;
+}
+body main .stay .container .info h2 {
+  font-size: 38px;
+  font-family: "Raleway", sans-serif;
+  color: hsl(243, 87%, 12%);
+  line-height: 1.5;
+}
+body main .stay .container .info > p {
+  width: 530px;
+  margin: 25px 0 20px 0;
+  color: hsl(243, 87%, 12%);
+  font-weight: 700;
+}
+body main .stay .container .info .special {
+  display: flex;
+  align-items: center;
+  color: hsl(170, 45%, 43%);
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  cursor: pointer;
+}
+body main .stay .container .info .special img {
+  transition: 0.3s;
+  margin-left: 10px;
+}
+body main .stay .container .info .special:hover > img {
+  transform: translateX(5px);
+}
+body main .stay .container .info .special::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: hsl(170, 45%, 43%);
+  bottom: -5px;
+}
+body main .stay .container .info .quote {
+  width: 350px;
+  background-color: #fff;
+  margin: 50px 0 0 0;
+  padding: 20px 35px;
+  box-shadow: 0px 0px 10px 10px #eee;
+  border-radius: 5px;
+}
+body main .stay .container .info .quote > img {
+  width: 30px;
+}
+body main .stay .container .info .quote > p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: hsl(243, 87%, 12%);
+  font-weight: bold;
+}
+body main .stay .container .info .quote .founder {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+}
+body main .stay .container .info .quote .founder img {
+  width: 35px;
+  border-radius: 50%;
+}
+body main .stay .container .info .quote .founder .name {
+  margin-left: 15px;
+}
+body main .stay .container .info .quote .founder .name h3 {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
+}
+body main .stay .container .info .quote .founder .name span {
+  font-size: 11px;
+  color: hsl(243, 87%, 12%);
+}
+body main .stay .container .image {
+  flex: 1;
+}
+body main .stay .container .image img {
+  width: 100%;
+}
+body main .access {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 80px 0;
+  background-color: hsl(238, 22%, 44%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .access .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .access .container .info {
+  flex: 1.5;
+}
+body main .access .container .info h2 {
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+}
+body main .access .container .info p {
+  width: 500px;
+  color: hsl(240, 75%, 98%);
+  margin-top: 10px;
+  line-height: 1.5;
+}
+body main .access .container form {
+  flex: 1;
+}
+body main .access .container form #email {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 10px 0.5px hsl(243, 87%, 12%);
+}
+body main .access .container form input:last-child {
+  display: block;
+  margin-top: 13px;
+  padding: 13px 0;
+  width: 45%;
+  background-color: hsl(224, 93%, 58%);
+  border: none;
+  border-radius: 5px;
+  color: hsl(240, 75%, 98%);
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 12px;
+  cursor: pointer;
+}
+body footer {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(243, 87%, 12%);
+  color: hsl(0, 0%, 75%);
+}
+body footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+body footer .container .logo {
+  margin-bottom: 80px;
+  text-align: left;
+}
+body footer .container .logo > div {
+  margin: 15px 0;
+}
+body footer .container .logo > div img {
+  margin-right: 10px;
+}
+body footer .container > ul {
+  list-style: none;
+  margin-top: 60px;
+}
+body footer .container > ul li {
+  padding: 0 0 15px 0;
+}
+body footer .container .social {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer .container .social > div {
+  border: 1px solid hsl(240, 75%, 98%);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 950px) {
+  body footer .container, body main .landing, body main .stay .container {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    width: 88%;
+    text-align: center;
+  }
+  body header .container img {
+    width: 100px;
+  }
+  body header .container .links {
+    font-size: 12px;
+  }
+  body header .container .links li a {
+    padding: 10px 6px;
+  }
+  body .landing .info h2 {
+    font-size: 28px !important;
+  }
+  body .landing .info p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  body .landing .info form div #email {
+    width: 100% !important;
+  }
+  body .landing .info form div input:last-child {
+    display: block;
+    width: 100% !important;
+    margin: 10px 0 0 0 !important;
+  }
+  body .stay .container .info {
+    margin-top: 40px;
+  }
+  body .stay .container .info h2 {
+    font-size: 22px !important;
+  }
+  body .stay .container .info p {
+    font-size: 14px !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    text-align: left;
+    font-weight: normal !important;
+  }
+  body .stay .container .info .quote {
+    width: 300px !important;
+    margin: 50px auto 0 auto !important;
+    text-align: left;
+  }
+  body .access .container {
+    flex-direction: column !important;
+  }
+  body .access .container .info h2 {
+    font-size: 22px !important;
+  }
+  body .access .container .info p {
+    font-size: 14px !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    font-weight: normal !important;
+    line-height: 1.6 !important;
+  }
+  body .access .container form {
+    margin-top: 30px;
+    width: 80%;
+  }
+  body .access .container form input:last-child {
+    width: 100% !important;
+  }
+  body footer .container {
+    flex-direction: column;
+    justify-content: space-around !important;
+  }
+  body footer .container .logo {
+    margin: 0 !important;
+  }
+  body footer .container .logo > img {
+    width: 100px;
+  }
+}/*# sourceMappingURL=style.css.map */
